@@ -1,0 +1,261 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+header {
+    background-color: rgb(10, 49, 97);
+    color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #000000;
+    position: sticky;
+    top: 0;
+    z-index: 1000
+}
+
+.vertical-line {
+    border-right: 5px solid black;
+    left: 100%;
+    position: absolute;
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    top: 10px
+}
+
+.header-container {
+    display: flex
+}
+
+.logo {
+    width: 100px;
+    position: relative;
+}
+
+.logo2 {
+    width: 100px;
+    padding-left: 40px
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color .3s
+}
+
+nav a:hover {
+    color: #ffa500 !important
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+main {
+    flex: 3;
+    position: relative
+}
+
+section {
+    margin-bottom: 20px;
+    display: block
+}
+
+article {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 20px 0
+}
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.flag-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+
+.flag-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.AR-15-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+
+aside {
+    position: sticky;
+    top: 10%;
+    height: fit-content;
+    padding: 10px;
+    background-color: #cfcdcd;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 10%)
+}
+
+aside ul li {
+    list-style: none;
+}
+
+aside ul li a {
+    list-style: none;
+    text-decoration: none;
+    display: block;
+    color: #000000;
+}
+
+aside ul li a:hover {
+    background-color: #fff;
+    color: #000000;
+    border-radius: 4px;
+}
+
+.link_to {
+    text-decoration: underline;
+    color: #000000;
+}
+
+.link_to:hover {
+    background-color: #000000;
+    color: #fff;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center
+}
+
+address a {
+    color: #ffa500;
+    text-decoration: none
+}
+
+.float-left {
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+.float-right {
+    float: right;
+    margin: 20px 10px 10px 20px;
+}
+
+.text-container {
+    text-align: justify;
+    margin-bottom: 300px;
+}
+
+.hr-change {
+    size: 10px;
+    border: 3px solid #000000;
+}
+
+.content-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.arm-overview {
+    padding: 20px;
+}
+
+.arm-overview .image-wrapper {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 30px;
+}
+
+.arm-overview img {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    transition: transform 0.3s ease;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.arm-overview img:hover {
+    transform: scale(1.05);
+}
+
+.arm-overview .hover-text {
+    position: absolute;
+    bottom: 10px;
+    left: -20px;
+    right: -20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(10px);
+}
+
+.arm-overview img:hover+.hover-text {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.arm-overview .float-right,
+.arm-overview .float-left {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    padding-bottom: 20px;
+}
+
+.arm-overview .text-container {
+    margin-top: 30px;
+    text-align: justify;
+}
+
+.arm-text {
+    flex: 1;
+}
+
+.copies {
+    margin: 20px;
+}
+
+ul {
+    list-style: disc outside, circle outside;
+    margin: 10px 0;
+}

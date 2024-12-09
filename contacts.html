@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ваши данные передаются ФСБ</title>
+    <link rel="stylesheet" href="contacts-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav class="nav">
+                <h1>Форма обратной связи</h1>
+                <ul class="menu">
+                    <li><a href="main.html">Главная</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="form-wrapper">
+            <h3 class="form__title">Контактная форма</h3>
+            <div class="form">
+                <div class="form__item">
+                    <input type="text" name="name" placeholder="Введите Ваше имя">
+                </div>
+                <div class="form__item">
+                    <input type="text" name="surname" placeholder="Введите Вашу фамилию">
+                </div>
+                <div class="form__item">
+                    <input type="number" name="age" placeholder="Возраст">
+                </div>
+                <div class="form__item">
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        placeholder="8 (800) 555-55-50" required>
+                </div>
+                <div class="form__item">
+                    <input type="email" id="email" name="email" placeholder="mail@mail.ru" required>
+                </div>
+                <div class="form__item unified-comment-subscribe">
+                    <textarea id="comments" name="comments" rows="4" cols="50" maxlength="200" minlength="10"
+                        placeholder="Введите комментарий" required style="padding: 10px;"></textarea>
+                    <div class="subscribe-checkbox">
+                        <input type="checkbox" name="subscribe"> Подписаться на новости
+                    </div>
+                </div>
+            </div>
+            <button class="form-btn">Отправить</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-section about-us">
+                <h4>Про нас</h4>
+                <p>Студент, который делает курсовую по дисциплине Проектирование и разработка клиентских частей
+                    интернет-ресурсов</p>
+                <div class="social-icons">
+                    <a href="https://vk.com/sovluck45" target="_blank"><i class="fa-brands fa-vkontakte"></i>Страница во
+                        ВКонтакте</a>
+                </div>
+            </div>
+            <div class="footer-section contact-us">
+                <h4>Как нас можно найти</h4>
+                <p><i class="fa-solid fa-location-dot"></i>пр. Вернадского, 78, Москва, Россия, 119454</p>
+                <p><i class="fa-solid fa-location-dot"></i>пр. Вернадского, 86, Москва, Россия, 119571</p>
+                <p><i class="fa-solid fa-location-dot"></i>ул. Стромынка, 20, Москва, Россия, 107996</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024, все права защищены. Создано Sovluck (Лакисов К.В.)</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
